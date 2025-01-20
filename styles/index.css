@@ -7,7 +7,7 @@
 /* google fonts */
 
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 /* applicable fonts */
 h1,
 h2,
@@ -18,11 +18,13 @@ h6 {
   font-family: "Quicksand", serif;
 }
 p,
-a,
-span {
+a {
   font-family: "Raleway", serif;
 }
+body{
+  font-family: "Roboto", serif;
 
+}
 .quicksand {
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
@@ -67,6 +69,12 @@ ul li {
 .btn-black:hover {
   background-color: rgba(0, 0, 0, 0.798);
 }
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
 /* header styles */
 /* .header {
   max-width: 1440px;
@@ -100,14 +108,14 @@ nav div ul {
   justify-content: center;
   gap: 2rem;
 }
-.li1 {
+.primary-color {
   color: var(--primary-color);
 }
-.li2 {
+.secondary-color {
   color: #01acfd;
 }
+
 .li3 {
-  /* color: white; */
   color: #05d4df;
 }
 .li4 {
@@ -117,6 +125,31 @@ nav div ul {
 .show-bars {
   display: none;
 }
+
+/* hero */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 4rem; */
+}
+.hero-content {
+  max-width: 640px;
+  height: 311px;
+  margin: 0 122px;
+}
+.hero-content h1 {
+  font-family: "Quicksand", serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 61px;
+}
+
+.hero-content p {
+  margin: 1rem 0;
+}
+
 /* small devices */
 @media screen and (max-width: 567px) {
   .sm-hidden {
@@ -125,5 +158,9 @@ nav div ul {
   .show-bars {
     display: block;
     font-size: 2rem;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
   }
 }
