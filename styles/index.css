@@ -51,7 +51,6 @@ ul li {
   min-width: 197px;
   max-height: 50px;
   padding: 10px 10px;
-  color: var(--text-color-1);
   border: none;
   border-radius: 12px;
   background-color: var(--text-color-1);
@@ -59,15 +58,19 @@ ul li {
 
 .btn-primary {
   background-color: var(--primary-color);
+  color: var(--text-color-1);
 }
 .btn-primary:hover {
   background-color: var(--primary-color-hover);
+  color: var(--text-color-1);
 }
 .btn-black {
   background-color: black;
+  color: var(--text-color-1);
 }
 .btn-black:hover {
   background-color: rgba(0, 0, 0, 0.798);
+  color: var(--text-color-1);
 }
 
 .container {
@@ -142,6 +145,7 @@ nav div ul {
   justify-content: space-between;
   /* gap: 4rem; */
 }
+
 .hero-content {
   max-width: 640px;
   height: 311px;
@@ -169,7 +173,7 @@ nav div ul {
   height: 476px;
   text-align: center;
   border-radius: 1.2rem;
-box-shadow:1rem;
+  box-shadow: 1rem;
 }
 .card-1-liner {
   background: linear-gradient(#def5ff, white);
@@ -194,6 +198,88 @@ box-shadow:1rem;
   color: #808080;
   margin: 2rem 0;
 }
+.cards-sec-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.cards-sec-icon i {
+  background-color: var(--primary-color);
+  height: 60px;
+  width: 60px;
+  color: white;
+  border-radius: 50%;
+}
+/* our stories */
+
+.stories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.stories > div {
+  width: 50%;
+}
+.grid-stories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.s-card-1 {
+  max-width: 540px;
+  height: 630px;
+  border-radius: 1rem;
+  position: relative;
+  border-radius: 2rem;
+  background-color: white;
+}
+.s-card-1 img {
+  width: 100%;
+}
+.s-card-1 button {
+  position: absolute;
+  margin: -20px 40px;
+}
+.s-card-1 h4 {
+  font-size: 24px;
+  font-weight: bold;
+  width: 402px;
+}
+.s-cars-desc {
+  margin-top: 20px;
+  padding: 2rem;
+}
+.s-card-g {
+  max-width: 290px;
+  border-radius: 1rem;
+  position: relative;
+  border-radius: 2rem;
+  background-color: white;
+}
+.s-card-g img {
+  width: 100%;
+}
+.s-card-g button {
+  position: absolute;
+  margin: -20px 40px;
+}
+.s-card-g h4 {
+  font-size: 24px;
+  font-weight: bold;
+  width: 402px;
+}
+.s-cars-desc-g {
+  margin-top: 20px;
+  padding: 2rem;
+}
+section {
+  background-color: beige;
+}
+.hidden{
+  display: none;
+}
 /* small devices */
 @media screen and (max-width: 567px) {
   .sm-hidden {
@@ -216,5 +302,8 @@ box-shadow:1rem;
   }
   .card {
     margin: 1rem;
+  }
+  .hidden{
+    display: block;
   }
 }
