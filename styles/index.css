@@ -1,13 +1,22 @@
+/* google fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 /* reset codes */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-/* google fonts */
+/* declear variables */
+:root {
+  --primary-color: orange;
+  --primary-color-hover: rgba(255, 166, 0, 0.79);
+  --secondary-color: blue;
+  --text-color-1: #ffffff;
+}
 
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 /* applicable fonts */
 h1,
 h2,
@@ -21,9 +30,7 @@ p,
 a {
   font-family: "Raleway", serif;
 }
-body {
-  font-family: "Roboto", serif;
-}
+
 .quicksand {
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
@@ -33,13 +40,7 @@ body {
   font-family: "Raleway", serif;
   font-optical-sizing: auto;
 }
-/* declear variables */
-:root {
-  --primary-color: orange;
-  --primary-color-hover: rgba(255, 166, 0, 0.79);
-  --secondary-color: blue;
-  --text-color-1: #ffffff;
-}
+
 /* common styles */
 a {
   text-decoration: none;
@@ -48,12 +49,13 @@ ul li {
   list-style: none;
 }
 .btn {
-  min-width: 197px;
-  max-height: 50px;
-  padding: 10px 10px;
+  width: 197px;
+  height: 50px;
+  padding: 0 10px;
   border: none;
+  font-size: 20px;
+  font-weight: 500;
   border-radius: 12px;
-  background-color: var(--text-color-1);
 }
 
 .btn-primary {
@@ -149,7 +151,7 @@ nav div ul {
 .hero-content {
   max-width: 640px;
   height: 311px;
-  margin: 0 122px;
+  margin: 122px;
 }
 .hero-content h1 {
   font-family: "Quicksand", serif;
@@ -198,17 +200,21 @@ nav div ul {
   color: #808080;
   margin: 2rem 0;
 }
-.cards-sec-icon {
+.cards-sec-icons {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
-.cards-sec-icon i {
+.cards-sec-icons i {
   background-color: var(--primary-color);
-  height: 60px;
-  width: 60px;
+  height: 3.75rem;
+  width: 3.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
+  font-size: 2rem;
   border-radius: 50%;
 }
 /* our stories */
@@ -237,6 +243,7 @@ nav div ul {
 }
 .s-card-1 img {
   width: 100%;
+  border-radius: 1.4rem 0;
 }
 .s-card-1 button {
   position: absolute;
@@ -258,8 +265,16 @@ nav div ul {
   border-radius: 2rem;
   background-color: white;
 }
+.g-btn-1 {
+  max-width: 180px;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: #95b226;
+}
 .s-card-g img {
   width: 100%;
+  border-radius: 0 1.2rem;
 }
 .s-card-g button {
   position: absolute;
@@ -277,7 +292,7 @@ nav div ul {
 section {
   background-color: beige;
 }
-.hidden{
+.hidden {
   display: none;
 }
 /* small devices */
@@ -303,7 +318,7 @@ section {
   .card {
     margin: 1rem;
   }
-  .hidden{
+  .hidden {
     display: block;
   }
 }
