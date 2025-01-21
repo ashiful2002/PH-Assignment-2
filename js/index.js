@@ -1,3 +1,9 @@
-let menu = document.getElementById("menu");
+document.addEventListener("DOMContentLoaded", function () {
+  const menuButton = document.getElementById("menu");
+  const navMenu = document.querySelector(".nav-flex");
 
-menu.addEventListener("click", );
+  menuButton.addEventListener("click", function () {
+    navMenu.classList.toggle("show");
+   
+  });
+});

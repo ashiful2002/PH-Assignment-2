@@ -222,7 +222,11 @@ nav div ul {
   border-radius: 50%;
 }
 /* our stories */
-
+.stories-section,
+.curriculam {
+  background-image: url(../assets/bg.png);
+  background-repeat: no-repeat;
+}
 .stories {
   display: flex;
   align-items: center;
@@ -293,9 +297,7 @@ nav div ul {
   margin-top: 20px;
   padding: 2rem;
 }
-section {
-  background-color: beige;
-}
+
 .hidden {
   display: none;
 }
@@ -317,7 +319,7 @@ footer {
   justify-content: space-evenly;
   max-width: 1071px;
   padding: 123px 140px;
-  gap: 5rem;
+  gap: 3rem;
 }
 .short-desc {
   max-width: 400px;
@@ -368,9 +370,7 @@ footer {
     color: var(--primary-color);
     border-bottom: 1px solid;
   }
-  /* nav {
-    border-bottom: 1px solid var(--primary-color);
-  } */
+
   .hero {
     flex-direction: column-reverse;
     text-align: center;
