@@ -60,6 +60,7 @@ ul li {
   font-size: 20px;
   font-weight: 500;
   border-radius: 12px;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -80,7 +81,6 @@ ul li {
 }
 
 .container {
-  max-width: 1160px;
   margin: 0 auto;
 }
 .section-title {
@@ -229,9 +229,12 @@ nav div ul {
 }
 .stories {
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 1rem;
+}
+.stories-section {
+  background: linear-gradient(white, #ffbc4960);
+  padding-bottom: 20px;
 }
 .stories > div {
   width: 50%;
@@ -249,12 +252,19 @@ nav div ul {
   border-radius: 2rem;
   background-color: white;
 }
+.s-card-g {
+  max-width: 290px;
+  border-radius: 1rem;
+  position: relative;
+  border-radius: 2rem;
+  background-color: white;
+}
 .s-card-1 img {
   width: 100%;
-  border-radius: 1.4rem 0;
+  border-radius: 1.4rem 1.4rem 0 0;
 }
 .s-card-1 button {
-  position: absolute;
+  position: relative;
   margin: -20px 40px;
 }
 .s-card-1 h4 {
@@ -266,13 +276,7 @@ nav div ul {
   margin-top: 20px;
   padding: 2rem;
 }
-.s-card-g {
-  max-width: 290px;
-  border-radius: 1rem;
-  position: relative;
-  border-radius: 2rem;
-  background-color: white;
-}
+
 .g-btn-1 {
   max-width: 180px;
   padding: 10px 10px;
@@ -282,7 +286,7 @@ nav div ul {
 }
 .s-card-g img {
   width: 100%;
-  border-radius: 0 1.2rem;
+  border-radius: 1.2rem 1.2rem 0 0;
 }
 .s-card-g button {
   position: absolute;
@@ -356,6 +360,14 @@ footer {
 .footer-logo {
   margin-bottom: 1rem;
 }
+/* marquee */
+marquee > h1 {
+  color: var(--secondary-color);
+}
+marquee > h1 > span {
+  color: var(--primary-color);
+}
+
 /* small devices */
 @media screen and (max-width: 567px) {
   .sm-hidden {
