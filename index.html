@@ -24,7 +24,7 @@
             </div>
             <div class="nav-flex sm-hidden ">
                 <ul>
-                    <li><a class="primary-color" href="#">Home</a></li>
+                    <li><a class="primary-color" href="#home">Home</a></li>
                     <li><a class="secondary-color" href="#about">About</a></li>
                     <li><a class="li3" href="#facilities">Facilities</a></li>
                     <li><a class="li4" href="#admission">Admission</a></li>
@@ -35,7 +35,10 @@
                 <i class="fa-solid fa-bars " id="menu"></i>
             </div>
         </nav>
-        <div class="container hero">
+        <div class="nav-hr">
+
+        </div>
+        <div class="container hero" id="home">
             <div class="hero-content">
                 <h1><span class="primary-color ">Empowering</span>
                     students from small age <span class="secondary-color">towards vision</span></h1>
@@ -49,7 +52,7 @@
         </div>
     </header>
     <main>
-        <section class="curriculam container" id="curriculam">
+        <section class="curriculam container" id="about">
 
             <h1 class="section-title">Standard Curriculum</h1>
             <div class="cards">
@@ -85,7 +88,7 @@
                 </div>
             </div>
         </section>
-        <section class=" container" id="stories">
+        <section class=" container" id="facilities">
             <h1 class="section-title">Our Stories</h1>
             <div class="stories">
 
@@ -191,12 +194,12 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="admission">
         <div class="container footer-contents">
             <div class="short-desc">
-                <div class="flex items-center justify-center">
-                    <img src="./assets/logo.png" alt="kids education">
-                    <h1>Kids Education</h1>
+                <div class="flex ">
+                    <img class="footer-logo" src="./assets/logo.png" alt="kids education">
+                    <h1 class="sm-hidden">Kids Education</h1>
                 </div>
                 <p>Pizza ipsum dolor meat lovers buffalo. Deep dolor roll melted bacon Bianca pan bacon pineapple
                     Aussie. Mayo rib sauce Hawaiian meatball.</p>
@@ -204,10 +207,16 @@
             </div>
             <div class="footer-navs">
                 <h4>about schools</h4>
-                <h5>home</h5>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#facilities">facilities</a></li>
+                    <li><a href="#admission">admission</a></li>
+                </ul>
+                <!-- <h5>home</h5>
                 <h5>about</h5>
                 <h5>Facilities</h5>
-                <h5>Admission</h5>
+                <h5>Admission</h5> -->
             </div>
             <div>
                 <h4>Keep in touch</h4>
