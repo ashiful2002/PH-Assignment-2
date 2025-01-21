@@ -25,6 +25,7 @@ h4,
 h5,
 h6 {
   font-family: "Quicksand", serif;
+  text-transform: capitalize;
 }
 p,
 a {
@@ -295,6 +296,44 @@ section {
 .hidden {
   display: none;
 }
+.centered-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0rem;
+}
+/* footer section */
+
+footer {
+  background-color: #01acfd;
+  color: white;
+}
+.footer-contents {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-evenly;
+  max-width: 1071px;
+  padding: 123px 140px;
+  gap: 5rem;
+}
+.short-desc {
+  max-width: 400px;
+}
+.short-desc h1 {
+  max-width: 207px;
+}
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.footer-navs {
+  max-width: 130px;
+}
+.gap-2{
+  gap: 0.3rem;
+}
 /* small devices */
 @media screen and (max-width: 567px) {
   .sm-hidden {
@@ -320,5 +359,11 @@ section {
   }
   .hidden {
     display: block;
+  }
+  .footer-contents {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+
   }
 }
