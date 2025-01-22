@@ -323,7 +323,7 @@ marquee > h1 > span {
 .right-div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  gap: 1rem;
   padding: 1rem;
 }
 .left-div {
