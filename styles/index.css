@@ -382,7 +382,14 @@ marquee > h1 > span {
     color: var(--primary-color);
     border-bottom: 1px solid;
   }
-
+.s-card-1{
+  position: relative;
+}
+.grid-stories{
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
   .hero {
     flex-direction: column-reverse;
     text-align: center;
