@@ -62,10 +62,26 @@ ul li {
   border-radius: 12px;
   cursor: pointer;
 }
-
+.story-btn {
+  max-width: fit-content;
+  padding: 5px 15px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight:500;
+  border: none;
+  background-color: var(--secondary-color);
+  color: white;
+  text-transform: capitalize;
+  position: relative;
+  top: -30px;
+  left: 10px;
+}
 .btn-primary {
   background-color: var(--primary-color);
   color: var(--text-color-1);
+}
+.hero img{
+  width: 100%;
 }
 .btn-primary:hover {
   background-color: var(--primary-color-hover);
@@ -222,85 +238,15 @@ nav div ul {
   border-radius: 50%;
 }
 /* our stories */
-.stories-section,
+.our-stories,
 .curriculam {
   background-image: url(../assets/bg.png);
   background-repeat: no-repeat;
 }
-.stories {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-.stories-section {
-  background: linear-gradient(white, #ffbc4960);
-  padding-bottom: 20px;
-}
-.stories > div {
-  width: 50%;
-}
-.grid-stories {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-}
-.s-card-1 {
-  max-width: 540px;
-  height: 630px;
-  border-radius: 1rem;
-  position: relative;
-  border-radius: 2rem;
-  background-color: white;
-}
-.s-card-g {
-  max-width: 290px;
-  border-radius: 1rem;
-  position: relative;
-  border-radius: 2rem;
-  background-color: white;
-}
-.s-card-1 img {
-  width: 100%;
-  border-radius: 1.4rem 1.4rem 0 0;
-}
-.s-card-1 button {
-  position: relative;
-  margin: -20px 40px;
-}
-.s-card-1 h4 {
-  font-size: 24px;
-  font-weight: bold;
-  width: 402px;
-}
-.s-cars-desc {
-  margin-top: 20px;
-  padding: 2rem;
+.our-stories {
+  background: linear-gradient(white, rgb(250, 250, 186));
 }
 
-.g-btn-1 {
-  max-width: 180px;
-  padding: 10px 10px;
-  border: none;
-  border-radius: 1.5rem;
-  background-color: #95b226;
-}
-.s-card-g img {
-  width: 100%;
-  border-radius: 1.2rem 1.2rem 0 0;
-}
-.s-card-g button {
-  position: absolute;
-  margin: -20px 40px;
-}
-.s-card-g h4 {
-  font-size: 24px;
-  font-weight: bold;
-  width: 402px;
-}
-.s-cars-desc-g {
-  margin-top: 20px;
-  padding: 2rem;
-}
 
 .hidden {
   display: none;
@@ -367,7 +313,52 @@ marquee > h1 {
 marquee > h1 > span {
   color: var(--primary-color);
 }
-
+/* second chance */
+.stories-wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
+  display: flex;
+  gap: 2rem;
+}
+.right-div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 1rem;
+}
+.left-div {
+  width: 540px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 16px;
+  box-shadow: inset 0.3px;
+}
+.left-div img {
+  max-width: 100%;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+.left-div-content {
+  padding: 2rem;
+}
+.relative-div {
+  position: relative;
+}
+.abs-btn {
+  position: relative;
+  top: -55px;
+}
+.small-right-div {
+  background-color: white;
+  width: auto;
+  overflow: hidden;
+  padding: rem;
+}
+.small-right-div div{
+  padding: 1rem;
+}
+.small-right-div img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
 /* small devices */
 @media screen and (max-width: 567px) {
   .sm-hidden {
@@ -377,19 +368,22 @@ marquee > h1 > span {
     display: block;
     font-size: 2rem;
   }
+  .left-div {
+    display: none;
+  }
   .nav-hr {
     margin-top: 20px;
     color: var(--primary-color);
     border-bottom: 1px solid;
   }
-.s-card-1{
-  position: relative;
-}
-.grid-stories{
-  position: absolute;
-  top: 30px;
-  left: 20px;
-}
+  .s-card-1 {
+    position: relative;
+  }
+  .grid-stories {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+  }
   .hero {
     flex-direction: column-reverse;
     text-align: center;
